@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>滑稽</title>
+    <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
+    <script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+
+<div class="mdui-container">
+    <div class="mdui-row">
+        <div class="mdui-card mdui-col-md-4 mdui-col-offset-md-4 ">
+            <div class="mdui-card-media">
+                <img src="/static/{{ path }}"/>
+            </div>
+            <div class="mdui-card-actions mdui-card-actions-stacked">
+                <form action="/" method="post">
+                    <label>
+                        <input name="path" type="text" value="{{ path }}" hidden>
+                    </label>
+                    <div class="mdui-textfield mdui-textfield-floating-label">
+                        <label class="mdui-textfield-label">文本</label>
+                        <input class="mdui-textfield-input" autofocus="autofocus" type="text" name="captcha" autocomplete="off"/>
+                        <br>
+                        <button class="mdui-color-deep-purple mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue"
+                                type="submit">确定
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
